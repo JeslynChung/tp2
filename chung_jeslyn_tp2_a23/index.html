@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Boite global -->
+    <div id="global">
+        <!-- Header (logo, titre et logo) -->
+        <header>
+            <figure> 
+                <img src="images/logo.webp" alt="sphinx"> 
+            </figure>
+            <h1>Galerie des arts</h1>
+            <nav>
+                <a href="#acceuil">Acceuil</a>
+                <a href="#inscription">Inscription</a>
+                <a href="#liste">Liste</a>
+                <a href="#article">Article</a>
+                <a href="#tutoriel">Tutoriel</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#contact">Contacts</a>
+            </nav>
+        </header>
+
+        <!-- Acceuil -->
+        <section id="acceuil">
+            <div id="un">
+                <h2>TP2 ✦</h2>
+                <h2>✦ Galerie des arts ✦</h2>
+                <h2>✦ Jeslyn Chung </h2>
+            </div>
+            <div id="deux">
+                <h3>582-1W1 - Mise en page Web </h3>
+                <h3>Techniques d'Inégration Multimédia </h3>
+                <h3>Collège de Maisonneuve </h3>
+                <h3>Automne 2023</h3>
+            </div>
+        </section>
+
+        <!-- Formulaire / inscription -->
+        <section id="inscription">
+            <h2>Inscription</h2>
+            <div id="trois">
+                
+                <label for="nom">Nom et prénom:</label>
+                <input type="text" id="nom" name="nom"> <br><br>
+
+                <label for="nom">Contact:</label>
+                <input type="text" id="contact" name="contact"> <br><br>
+        
+                <p>Session: </p>
+                <input type="radio" name="session" id="session" value="premiere">
+                <label for="session">Première année</label> <br>
+                <input type="radio" name="session" id="session" value="deuxieme">
+                <label for="session">Deuxième année</label> <br> 
+                <input type="radio" name="session" id="session" value="troisieme">
+                <label for="session">Troisième année</label> <br><br>
+        
+                <p>Style</p>  
+                <input type="checkbox" name="interet" id="interet" value="reel">
+                <label for="reel">Réalisme</label> <br>
+                <input type="checkbox" name="interet" id="interet" value="anime">
+                <label for="anime">Animé</label> <br>
+                <input type="checkbox" name="interet" id="interet" value="exagere">
+                <label for="exagere">Exagéré</label> <br>
+                <input type="checkbox" name="interet" id="interet" value="autre">
+                <label for="autre">Autres</label>
+            </div>
+            <div id="quatre">
+                <br>
+                <label for="forme">Choisi un médium artistique:</label>
+                <select name="forme" id="forme">
+                    <option value="traditionnelle">Traditionnelle</option>
+                    <option value="digitale">Digitale</option>
+                    <option value="peinture">Peinture</option>
+                    <option value="encre">Encre</option>
+                    <option value="autre">Autre</option>
+                </select> <br> <br>
+        
+                <p>Pourquoi veux-tu t'inscrire?</p>
+                <textarea name="Game" cols="30" rows="10"></textarea> <br> <br>
+        
+                <input type="submit" value="Soumettre" id="bouton_submit" aria-label="Soumettre">
+                <input type="reset" value="Annuler">
+            </div>
+        </section>
+
+        <!-- Tableau (liste des artiste et images) -->
+        <section id="liste">
+            <h2>Liste des artistes</h2>
+            <table>
+                <tr>
+                    <th>  </th>
+                    <th> Artiste </th>
+                    <th> Type </th>
+                    <th> Art</th>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> Emanuel Pavao </td>
+                    <td> ruban adhésif </td>
+                    <td> <figure> <img src="images/IMG_1.webp" alt=""></figure> </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> Laetita Ky </td>
+                    <td> Styliste modéliste </td>
+                    <td> <figure> <img src="images/IMG_2.webp" alt=""></figure> </td>
+                </tr>
+                <tr>
+                    <td> 3 </td>
+                    <td> Annette Gaffney </td>
+                    <td> Recyclage </td>
+                    <td> <figure> <img src="images/IMG_3.webp" alt=""></figure> </td>
+                </tr>
+                <tr>
+                    <td> 4 </td>
+                    <td> Lucy Sparrow </td>
+                    <td> Feutre </td>
+                    <td> <figure> <img src="images/IMG_4.webp" alt=""></figure> </td>
+                </tr>
+                <tr>
+                    <td> 5 </td> 
+                    <td> Abigail Goldman </td>
+                    <td> Dioramas </td>
+                    <td> <figure> <img src="images/IMG_5.webp" alt=""></figure> </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Article et texte -->
+        <section id="article">
+            <div id="cinq">
+                <h2>Article</h3>
+                
+            </div>
+            <div id="six">
+                <iframe src="https://www.artxterra.com/quest-ce-que-lart-et-a-quoi-ca-sert%E2%80%89/" frameborder="0"></iframe>
+                <div id="texte">
+                <h3>Mes raisons</h3>
+                <p>" Comme présenté dans l'article juste de côté, tu n'as pas besoin de talent ou de grandes connaissance pour pouvoir faire de l'art et de même joidre. L'art est simplement une méthode d'expression qui est unique pour chaque artiste. Les fondamentales et les techniques d'arts ne sont que des outils pour mieux transférer les idées qu'on a en tête. "</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video et texte -->
+        <section id="tutoriel">
+            <div id="sept">
+                <h2>Tutoriel</h2>
+            </div>
+            <div id="huit">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pQR4v36N5cA?si=CPyTtUHVZCkwtDb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="texteaussi">
+                <h3>Les fondamentales</h3>
+                <p>Voici un résumé des fondamentales et des techniques d'art qu'on appliquera dans le futur avec plus de détails. Ce sont des théories que tout les artistes, peu n'importe les médiums.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie des images d'arts -->
+        <section id="galerie">
+            <h2>Galerie</h2>
+            <div id="neuf">
+                <figure> 
+                    <img src="images/IMG_6.webp" alt="">
+                    <figcaption>Art 1</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/IMG_7.webp" alt="">
+                    <figcaption>Art 2</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/IMG_8.webp" alt="">
+                    <figcaption>Art 3</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/IMG_9.webp" alt="">
+                    <figcaption>Art 4</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/IMG_10.webp" alt="">
+                    <figcaption>Art 5</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="contact">
+            <footer>
+                <div id="douze">
+                    <a href="https://www.cmaisonneuve.qc.ca/">Collège Maisonneuve</a>
+                    <a href="https://www.artxterra.com/quest-ce-que-lart-et-a-quoi-ca-sert%E2%80%89/">Source 1</a>
+                    <a href="https://youtu.be/pQR4v36N5cA?si=RqBL4IM8d7ecSrt8">Source 2</a>
+                </div>
+                <div id="dix">
+                    <p>Maisonneuve College, 3800 R. Sherbrooke E, Montreal, Qc H1X 2A2</p>
+                </div>
+                <div id="onze">
+                    <figure> <img src="images/instagram_32.png" alt="insta"></figure>
+                    <figure> <img src="images/facebook_32.png" alt="fb"></figure>
+                    <figure> <img src="images/youtube_32.png" alt="yt"></figure>
+                </div>
+                
+            </footer>
+        </section>
+    </div>
+    
+
+
+</body>
+</html>
